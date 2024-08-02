@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Form from "./Form";
+import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Nav from "./Nav";
+import Register from "./Register";
 function App() {
+  const [deg, setdeg] = useState("");
+  const [deg2, setdeg2] = useState("");
+  const degeral = (event) => {
+    setdeg(event);
+  };
+  const degeral2 = (event) => {
+    setdeg2(event);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+        <Routes>
+          <Route path="/" element={<Nav />} />
+          <Route
+            path="/form"
+            element={<Form degeral={degeral} degeral2={degeral2} />}
+          />
+          <Route path="/register" element={<Register/>}/>
+        </Routes>
+  
     </div>
   );
 }

@@ -1,0 +1,18 @@
+{
+    "Kullanicilar": [
+      {
+        "id":1,
+        "name":"hande",
+        "pasword": "1234"
+      },
+      {"id":2,
+       "name":"a",
+        "pasword": "1234"
+      },
+      {
+        "id": 3,
+        "name":"b",
+        "pasword": "1234"
+      }
+    ]
+  }
