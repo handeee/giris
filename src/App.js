@@ -13,6 +13,10 @@ function App() {
   const degeral2 = (event) => {
     setdeg2(event);
   };
+  // const getuser=()=>{
+  
+
+  // }
 
   return (
     <div className="App">

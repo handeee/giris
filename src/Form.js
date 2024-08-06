@@ -25,7 +25,7 @@ const Form = ({ degeral, degeral2 }) => {
       const response = await fetch("http://localhost:3000/Kullanicilar");
       const data = await response.json();
   
-     user = data.find(element => deger === element.name && deger2 === element.pasword);
+     user =data.find(element => deger === element.name && deger2 === element.pasword);
       if (user) {
         console.log("Giriş başarılı");
         navigate('/');
@@ -39,7 +39,7 @@ const Form = ({ degeral, degeral2 }) => {
   };
   
   const kayityap=()=>{
-   
+   navigate("/register");
 
   }
   return (
